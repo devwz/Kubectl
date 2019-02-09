@@ -1,0 +1,26 @@
+{
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "name": "api-kubectl",
+        "labels": {
+            "version" : "v1",
+            "app": "api-kubectl"
+        }
+    },
+    "spec": {
+        "containers": [
+            {
+                "name": "api-kubectl",
+                "image": "api-kubectl:v1",
+                "ports": [{
+                        "containerPort": 50867
+                    }],
+                "env": [{
+                    "name": "ASPNETCORE_ENVIRONMENT",
+                    "value": "Development"
+                }]
+            }
+        ]
+    }
+}
