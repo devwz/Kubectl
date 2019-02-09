@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubectl", "Kubectl\Kubectl.csproj", "{60BE2780-8131-431C-B4C1-9D197313E146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubectl", "Kubectl\Kubectl.csproj", "{60BE2780-8131-431C-B4C1-9D197313E146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubectl.Core", "Kubectl.Core\Kubectl.Core.csproj", "{717F8F33-3D9B-4FC6-9559-7F7A5038693B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{60BE2780-8131-431C-B4C1-9D197313E146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60BE2780-8131-431C-B4C1-9D197313E146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60BE2780-8131-431C-B4C1-9D197313E146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717F8F33-3D9B-4FC6-9559-7F7A5038693B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717F8F33-3D9B-4FC6-9559-7F7A5038693B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717F8F33-3D9B-4FC6-9559-7F7A5038693B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717F8F33-3D9B-4FC6-9559-7F7A5038693B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
