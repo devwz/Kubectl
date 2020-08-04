@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: api-kubectl
+  name: api-kubectl
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      run: api-kubectl
+  template:
+    metadata:
+      labels:
+        run: api-kubectl
+    spec:
+      containers:
+      - image: api-kubectl:v1
+        name: api-kubectl
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: api-kubectl
+  name: api-kubectl
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: api-kubectl
+  type: NodePort
