@@ -21,19 +21,19 @@ docker run -d -p 51124:80 --name api-kubectl api-kubectl:v1
 
 v 1.16
 Criando pod por linha de comando
-kubectl run --generator=run-pod/v1 api-kubectl --image api-kubectl:v1 --env "ASPNETCORE_ENVIRONMENT=Development"
+kubectl run --generator=run-pod/v1 api-kubectl --image=api-kubectl:v1 --env="ASPNETCORE_ENVIRONMENT=Development"
 
 v 1.16
 Criado deployment por linha de comando
-kubectl create deployment api-kubectl --image api-kubectl:v1
+kubectl create deployment api-kubectl --image=api-kubectl:v1
 
 v 1.16
 Para replicar deployment
-kubectl scale deployment api-kubectl --replicas 10
+kubectl scale deployment api-kubectl --replicas=10
 
 v 1.16
-Para expor aplicação
-kubectl expose deployment api-kubectl --type NodePort  --port 80
+Para expor um deployment
+kubectl expose deployment api-kubectl --type=NodePort --port=80
 
 #### Manifesto
 
